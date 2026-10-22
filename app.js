@@ -7,3 +7,14 @@ if (age >= 15 && hasTicket == true) {
 } else {
     console.log("go home")
 }
+
+const isLoggedin = true
+const userRole = "admin"
+
+if (isLoggedin && userRole === "admin") {
+    console.log("welcome admin")
+} else if (isLoggedin) {
+    console.log("welcome guest")
+} else {
+    console.log("login first")
+}
