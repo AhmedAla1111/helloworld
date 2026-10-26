@@ -61,24 +61,22 @@ for (let i = 0; i < fruits.length; i++) {
     console.log(fruits[i])
 }
 
-console .log
 const cart = ["Mjölk", "Godis", "Bröd", "Godis", "Äpple"]
 for (const product of cart) {
     if (product === "Godis") {
         console.log("varan är onödig")
     } else {
-        console.log('köp' + product)
+        console.log("köp " + product)
     }
+}
 
-
-
-    const halsa = (name, age, roll = "gäst") => {
-        console.log("hej "+ name + age + roll)
+const halsa = (name, age, roll = "gäst") => {
+    console.log("hej " + name + " " + age + " " + roll)
     if (age < 18) {
-     return (message = "du är minderårig")
+        return { message: "du är minderårig" }
     }
-    return {message: "du är vuxen"}
+    return { message: "du är vuxen" }
+}
 
-const skapakontoObejct = skapakonto('Ahmed', 16, 'student')
-     console.log(skapakontoObejct.message)
-     
+const skapakontoObject = halsa("Ahmed", 16, "student")
+console.log(skapakontoObject.message)
